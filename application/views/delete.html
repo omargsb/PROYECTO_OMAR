@@ -1,0 +1,82 @@
+$def with(datos)
+<BR>
+  <table cellspacing="0" width="100%">
+     <tr>
+      <p class="text-primary bg-dark text-center h2" >ELIMINAR</p>
+      </tr>
+  </table> 
+  <form method="POST">
+      <div class="form-group">
+          <table class="table table-sm">
+    
+              <tbody>
+                  
+                <tr class="bg-primary"> 
+                  <div class="form-group">
+                    <th scope="row"><h2>NOMBRE:</h2></th>
+                    <td colspan="5"><h2>$datos.nombre &nbsp $datos.a_paterno &nbsp $datos.a_materno</h2></td>
+                     
+                  </div>
+                </tr>
+              </tbody>
+          </table> 
+
+                <table class="table table-striped">
+    
+                  <tbody>
+                <tr>
+                  <th scope="row"><h1>MATRICULA:</h2></th>
+                    <td colspan="5"><h2><input type="text" style="border:none" size="12" value="$datos.matricula" id="Matricula" name="matricula"></h2></td>
+                  </tr>
+                <tr>
+                  <th scope="row"><H4>DIRECCIÓN:</H3></th>
+                  <td colspan="5"><H4>$datos.calle &nbsp NÚMERO &nbsp $datos.numero &nbsp COLONIA &nbsp $datos.colonia</H4></td>
+                  </tr>
+                <tr>
+                  <th scope="row"><H4>MUNICIPIO:</H4></th>
+                  <td ><H4>$datos.municipio</H4></td>
+                  <td><H4>ESTADO:</H4></td>
+                  <td><H4>$datos.estado</H4></td>
+                  <td><H4>CÓDIGO POSTAL:</H4></td>
+                  <td><H4>$datos.cp</H4></td>
+                </tr>
+                <tr>
+                  <th scope="row"><H4>E-mail:</H4></th>
+                  <td colspan="2"><H4>$datos.email</H4></td>
+                  <td><H4>Password:</H4></td>
+                  <td colspan="2"><H4>$datos.password</H4></td>
+                </tr>
+              </tbody>
+            </table>
+            
+
+      </div>
+      <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+  Eliminar registro
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">ATENCIÓN: Eliminar</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        Vas a eliminar el registro del alumno $datos.nombre &nbsp $datos.a_paterno &nbsp $datos.a_materno<br>
+        ¿Estas seguro?
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">No</button>
+        <button type="submit" class="btn btn-primary">Si</button>
+      </div>
+    </div>
+  </div>
+</div>
+</form>  
+    </form>
+  

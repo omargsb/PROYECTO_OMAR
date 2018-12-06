@@ -1,0 +1,54 @@
+$def with(datos)
+<h2><p class="text-right">Detalle Alumno</p></h2>
+<BR>
+
+<h3><em> </em></h3>
+<h3><em> </em></h3>
+
+
+<table class="table table-striped">
+    
+    <tbody>
+      <tr>
+        <th scope="row" colspan="5" ><h1><p class="text-right">MATRICULA:</p></h1></th>
+        <td><h1>$datos.matricula</h1></td>
+        </tr>
+      <tr>
+        <th scope="row"><h2>NOMBRE:</h2></th>
+        <td colspan="5"><h2>$datos.nombre &nbsp $datos.a_paterno &nbsp $datos.a_materno</h2></td>
+        </tr>
+      <tr>
+        <th scope="row"><H4>DIRECCIÓN:</H3></th>
+        <td colspan="5"><H4>$datos.calle &nbsp NÚMERO &nbsp $datos.numero &nbsp COLONIA &nbsp $datos.colonia</H4></td>
+        </tr>
+      <tr>
+        <th scope="row"><H4>MUNICIPIO:</H4></th>
+        <td ><H4>$datos.municipio</H4></td>
+        <td><H4>ESTADO:</H4></td>
+        <td><H4>$datos.estado</H4></td>
+        <td><H4>CÓDIGO POSTAL:</H4></td>
+        <td><H4>$datos.cp</H4></td>
+      </tr>
+      <tr>
+        <th scope="row"><H4>E-mail:</H4></th>
+        <td colspan="2"><H4>$datos.email</H4></td>
+        <td><H4>Password:</H4></td>
+        <td colspan="2"><H4>$datos.password</H4></td>
+      </tr>
+      
+
+    </tbody>
+  </table>
+
+  <nav aria-label="Page navigation example">
+    <ul class="pagination justify-content-end">
+      <li class="page-item disabled">
+        <a class="page-link" href="/" tabindex="-1">Anterior</a>
+      </li>
+      
+      <li class="page-item">
+        <a class="page-link" href="/">Siguiente</a>
+      </li>
+    </ul>
+  </nav>
+  

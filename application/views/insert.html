@@ -1,0 +1,82 @@
+<BR>
+  <table cellspacing="0" width="100%">
+     <tr>
+      <p class="text-primary bg-dark text-center h2" >INSERTAR</p>
+      </tr>
+  </table> 
+
+<form method="POST">
+    <div class="form-row">
+
+
+        
+          <div class="col-md-2 mb-4">
+          <label for="matricula">Matrícula</label>
+          <input type="text" class="form-control" maxlength="14" name="matricula" id="matricula">
+          <small id="passwordHelpInline" class="text-muted">
+            La matricula debe contener 14 carecternes numericos
+          </small>
+        </div>
+        <div class="col-md-3 mb-4">
+          <label for="nombre">Nombre</label>
+          <input type="text" class="form-control" maxlength="10" name="nombre" id="nombre" onKeyUp="this.value=this.value.toUpperCase();">
+        </div>
+        <div class="col-md-3 mb-4">
+        <label for="a_paterno">A. Paterno</label>
+        <input type="text" class="form-control"  maxlength="15" name="a_paterno" id="a_paterno" onKeyUp="this.value=this.value.toUpperCase();">
+         </div>
+         <div class="col-md-3 mb-4">
+            <label for="a_materno">A. Materno</label>
+            <input type="text" class="form-control" maxlength="15" name="a_materno" id="a_materno" onKeyUp="this.value=this.value.toUpperCase();">
+             </div>
+      </div>
+
+      <div class="form-row">
+        <div class="col-md-3 mb-4">
+          <label for="calle">Calle</label>
+          <input type="text" class="form-control" maxlength="40" name="calle" id="calle" onKeyUp="this.value=this.value.toUpperCase();">
+        </div>
+        <div class="col-md-1 mb-1">
+            <label for="numero">Numero</label>
+            <input type="text" class="form-control" maxlength="4" name="numero" id="numero">
+          </div>
+          <div class="col-md-3 mb-4">
+              <label for="colonia">Col.</label>
+              <input type="text" class="form-control" maxlength="40" name="colonia" id="colonia" onKeyUp="this.value=this.value.toUpperCase();">
+            </div>
+            <div class="col-md-3 mb-4">
+                <label for="municipio">Municipio</label>
+                <input type="text" class="form-control" maxlength="30" name="municipio" id="municipio" onKeyUp="this.value=this.value.toUpperCase();">
+              </div>
+      </div>
+      <div class="form-row">
+           <div class="form-group col-md-4">
+            <label for="estado">Estado</label>
+            <select id="estado" class="form-control" name="estado">
+              <option selected>Choose...</option>
+              <option>AGUASCALIENTES</option><option>BAJA CALIFORNIA</option><option>BAJA CALIFORNIA SUR</option><option>HIDALGO</option>
+              
+            </select>
+          </div>
+          <div class="form-group col-md-2">
+            <label for="cp">Código Postal</label>
+            <input type="Zip" maxlength="5" class="form-control" name="cp" id="cp">
+          </div>
+        </div>
+
+
+      <div class="form-row">
+      <div class="form-group col-md-6">
+        <label for="email">Email</label>
+        <input type="email" class="form-control" name="email" id="email" placeholder="Email">
+      </div>
+      <div class="form-group col-md-6">
+        <label for="password">Password</label>
+        <input type="password" pattern=".{8,}" required title="minimo 8 caracteres" maxlength="16" class="form-control" name="password" id="password" placeholder="Password" class="form-control mx-sm-3" aria-describedby="passwordHelpInline">
+        <small id="passwordHelpInline" class="text-muted">
+          Debe tener entre 8 y 16 caracteres
+        </small>
+      </div>
+    </div>
+    <button type="submit" class="btn btn-primary">Insertar</button>
+  </form>

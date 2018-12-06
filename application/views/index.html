@@ -1,0 +1,39 @@
+$def with(datos)
+<BR>
+<table cellspacing="0" width="100%">
+   <tr>
+    <p class="text-primary bg-dark text-center h2" > ALUMNOS 3ro "A" - OFIMÁTICA</p>
+    </tr>
+</table>  
+
+<body>
+<table class="table table-striped table-dark">
+  <thead>
+    <tr>
+      <th scope="col">Matricula</th>
+      <th scope="col">Nombre</th>
+      <th scope="col">A. Paterno</th>
+      <th scope="col">A. Materno</th>
+      <th scope="col">Email</th>
+      <th scope="col">Actualizar</th>
+      <th scope="col">Eleminar</th>
+    </tr>
+  </thead>
+  
+  <tbody>
+    $for row in datos:
+    
+      <tr>
+        <td><a href="/view/$row.matricula">$row.matricula</a></td>
+        <td>$row.nombre</td>
+        <td>$row.a_paterno</td>
+        <td>$row.a_materno</td>
+        <td>$row.email</td>
+        <td><a href="/update/$row.matricula">Actulizar</a></td>
+        <td><a href="/delete/$row.matricula">Eliminar</a></td>
+      </tr>
+     
+  </tbody>
+
+</table>
+</body>
